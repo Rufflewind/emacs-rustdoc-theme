@@ -8,3 +8,5 @@ configuration file:
 
     ;; add this to ~/.emacs or ~/.emacs.d/init.el
     (add-to-list 'custom-theme-load-path "~/.emacs.d/elisp")
+
+![Screenshot](example.png)

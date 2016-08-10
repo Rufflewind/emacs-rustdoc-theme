@@ -3,6 +3,7 @@
 (let ((class '((class color) (min-colors 89))))
   (custom-theme-set-faces
    'rustdoc
+   `(default ((,class (:foreground "#4d4d4c" :background "#fafafa"))))
    `(font-lock-builtin-face ((,class (:foreground "#4271ae"))))
    `(font-lock-comment-delimiter-face ((,class (:foreground "#8e908c"))))
    `(font-lock-comment-face ((,class (:foreground "#8e908c"))))
@@ -16,6 +17,10 @@
    `(font-lock-string-face ((,class (:foreground "#718c00"))))
    `(font-lock-type-face ((,class (:foreground "#c82829"))))
    `(font-lock-variable-name-face ((,class (:foreground "#b76514"))))
-   `(font-lock-warning-face ((,class (:foreground "red"))))))
+   `(font-lock-warning-face ((,class (:foreground "#fa2565"))))
+   `(hl-line ((,class (:background "#e7e7e7"))))
+   `(minibuffer-prompt ((,class (:foreground "#4271ae"))))
+   `(region ((,class (:background "#c7c7c7"))))
+   `(secondary-selection ((,class (:background "#efd0b3"))))))
 
 (provide-theme 'rustdoc)
