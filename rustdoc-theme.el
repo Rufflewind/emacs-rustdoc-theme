@@ -3,7 +3,7 @@
 (let ((class '((class color) (min-colors 89))))
   (custom-theme-set-faces
    'rustdoc
-   `(default ((,class (:foreground "#4d4d4c" :background "#fafafa"))))
+   `(default ((,class (:background "#f5f5f5" :foreground "#000000"))))
    `(font-lock-builtin-face ((,class (:foreground "#4271ae"))))
    `(font-lock-comment-delimiter-face ((,class (:foreground "#8e908c"))))
    `(font-lock-comment-face ((,class (:foreground "#8e908c"))))
@@ -18,9 +18,16 @@
    `(font-lock-type-face ((,class (:foreground "#c82829"))))
    `(font-lock-variable-name-face ((,class (:foreground "#b76514"))))
    `(font-lock-warning-face ((,class (:foreground "#fa2565"))))
-   `(hl-line ((,class (:background "#e7e7e7"))))
+   `(hl-line ((,class (:background "#e2e2e2"))))
+   `(isearch ((,class (:background "#718c00" :foreground "#f5f5f5"))))
+   `(isearch-fail ((,class (:background "#fa2565" :foreground "#f5f5f5"))))
+   `(lazy-highlight ((,class (:background "#f6fdb0"))))
+   `(match ((,class (:background "#c67e2d" :foreground "#f5f5f5"))))
    `(minibuffer-prompt ((,class (:foreground "#4271ae"))))
    `(region ((,class (:background "#c7c7c7"))))
-   `(secondary-selection ((,class (:background "#efd0b3"))))))
+   `(secondary-selection ((,class (:background "#efd0b3"))))
+   `(show-paren-match ((,class (:background "#ff9011" :foreground "#f5f5f5"))))
+   `(show-paren-mismatch ((,class (:background "#fa2565" :foreground "#f5f5f5"
+                                   :weight bold))))))
 
 (provide-theme 'rustdoc)
