@@ -4,6 +4,7 @@
   (custom-theme-set-faces
    'rustdoc
    `(default ((,class (:background "#f5f5f5" :foreground "#000000"))))
+   `(error ((,class (:foreground "#fa2565" :weight bold))))
    `(font-lock-builtin-face ((,class (:foreground "#4271ae"))))
    `(font-lock-comment-delimiter-face ((,class (:foreground "#8e908c"))))
    `(font-lock-comment-face ((,class (:foreground "#8e908c"))))
@@ -28,6 +29,7 @@
    `(secondary-selection ((,class (:background "#efd0b3"))))
    `(show-paren-match ((,class (:background "#ff9011" :foreground "#f5f5f5"))))
    `(show-paren-mismatch ((,class (:background "#fa2565" :foreground "#f5f5f5"
-                                   :weight bold))))))
+                                   :weight bold))))
+   `(warning ((,class (:foreground "#ff9011" :weight bold))))))
 
 (provide-theme 'rustdoc)
